@@ -12,16 +12,20 @@ The table is based on Israel Ministry of Health's [dashboard](https://datadashbo
 | positiveRatePCR | positiveRatePCR | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive PCR tests | 
 | positiveRateAntigen | positiveRateAntigen | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive Antigen tests | 
 | deaths |  countDeaths | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | deaths by date of death |
-| countHardStatus | countHardStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized severely ill patients (low oxygenation, PaO2/FiO2 < 300) |
-| countMediumStatus | countMediumStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized in medium condition (COVID19 + pneumonia) |
-| countEasyStatus | countEasyStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospirtalized in mild condition (some COVID19 symptoms) |
 | severeNew | seriousCriticalNew | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospitalized patients in severe condition |
 | mediumNew | mediumNew | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospitalized patients in medium condition (may have improved from severe)|
 | easyNew | easyNew | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospitalized patients in mild condition (may have improved from mild or severe)|
+| countEasyStatus | countEasyStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospirtalized in mild condition (some COVID19 symptoms) |
+| countMediumStatus | countMediumStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized in medium condition (COVID19 + pneumonia) |
+| countHardStatus | countHardStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized severely ill patients (low oxygenation, PaO2/FiO2 < 300) |
 | countBreath | countBreath | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | mechanically ventilated patients |
 | countCriticalStatus | countCriticalStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized in critical condition (system failure- heart, lungs, kidneys...). usually in ICU |
-| countEcmo | countEcmo | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | patients connected to ECMO |
-| countBreathCum | countBreathCum | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | cumulative mechanically ventilated patients |
+| countSeriousCriticalCum | countSeriousCriticalCum | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | cumulative severe or critical patients. The difference between days gives the number of new severe patients |
 | newHospitalized | newHospitalized | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospital admissions |
+| countBreathCum | countBreathCum | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | cumulative mechanically ventilated patients |
+| countHospitalized | countHospitalized | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | patients connected to ECMO |
+| countEcmo | countEcmo | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | patients connected to ECMO |
+
+
 
 
