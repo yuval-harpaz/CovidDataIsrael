@@ -5,7 +5,7 @@ The table is based on Israel Ministry of Health's [dashboard](https://datadashbo
 | field | MOH field | json | description |
 | ------ | ------ | - | - |
 | date | yyyy-mm-dd |  |  |
-| cases | amount | infectedPerDate | positive PCR and Antigen tests by reported date | 
+| cases | amount | [infectedPerDate](https://datadashboardapi.health.gov.il/api/queries/infectedPerDate) | positive PCR and Antigen tests by reported date | 
 | recovered | recovered | [infectedPerDate](https://datadashboardapi.health.gov.il/api/queries/infectedPerDate) | recovered cases | 
 | tests | amountPersonTested | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | PCR and Antigen tests for COVID diagnosis (not recovery) |
 | positiveRate | positiveRate | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive tests = 100×cases/tests | 
@@ -19,11 +19,11 @@ The table is based on Israel Ministry of Health's [dashboard](https://datadashbo
 | countMediumStatus | countMediumStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized in medium condition (COVID19 + pneumonia) |
 | countHardStatus | countHardStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized severely ill patients (low oxygenation, PaO2/FiO2 < 300) |
 | countBreath | countBreath | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | mechanically ventilated patients |
-| countCriticalStatus | countCriticalStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized in critical condition (system failure- heart, lungs, kidneys...). usually in ICU |
+| countCriticalStatus | countCriticalStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized in critical condition (system failure- heart, lungs, kidneys...). Usually in ICU |
 | countSeriousCriticalCum | countSeriousCriticalCum | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | cumulative severe or critical patients. The difference between days gives the number of new severe patients |
 | newHospitalized | newHospitalized | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospital admissions |
-| countBreathCum | countBreathCum | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | cumulative mechanically ventilated patients |
-| countHospitalized | countHospitalized | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | patients connected to ECMO |
+| countBreathCum | countBreathCum | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | cumulative mechanically ventilated patients. The difference between days gives the number of newly ventilated. This is the closest measure to new ICU admissions. |
+| countHospitalized | countHospitalized | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | all hospitalized COVID19 patients |
 | countEcmo | countEcmo | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | patients connected to ECMO |
 
 
