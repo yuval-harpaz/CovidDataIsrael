@@ -6,11 +6,11 @@ The table is based on Israel Ministry of Health's [dashboard](https://datadashbo
 | ------ | ------ | - | - |
 | date | yyyy-mm-dd |  |  |
 | cases | amount | infectedPerDate | positive PCR and Antigen tests by reported date | 
-| recovered | recovered | infectedPerDate | recovered cases | 
-| tests | amountPersonTested | infectedPerDate | PCR and Antigen tests for COVID diagnosis (not recovery) |
-| positiveRate | positiveRate | infectedPerDate | percent positive tests = 100×cases/tests | 
-| positiveRatePCR | positiveRatePCR | infectedPerDate | percent positive PCR tests | 
-| positiveRateAntigen | positiveRateAntigen | infectedPerDate | percent positive Antigen tests | 
+| recovered | recovered | [infectedPerDate](https://datadashboardapi.health.gov.il/api/queries/infectedPerDate) | recovered cases | 
+| tests | amountPersonTested | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | PCR and Antigen tests for COVID diagnosis (not recovery) |
+| positiveRate | positiveRate | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive tests = 100×cases/tests | 
+| positiveRatePCR | positiveRatePCR | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive PCR tests | 
+| positiveRateAntigen | positiveRateAntigen | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive Antigen tests | 
 | deaths |  countDeaths | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | deaths by date of death |
 | countHardStatus | countHardStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized severely ill patients (low oxygenation, PaO2/FiO2 < 300) |
 | countMediumStatus | countMediumStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized in medium condition (COVID19 + pneumonia) |
