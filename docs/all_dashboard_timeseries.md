@@ -21,7 +21,7 @@ The table is based on Israel Ministry of Health's [dashboard](https://datadashbo
 | countBreath | mechanically ventilated patients | hardPatient | countBreath |
 | countCriticalStatus | hospitalized in critical condition (system failure- heart, lungs, kidneys...). usually in ICU | hardPatient | countCriticalStatus |
 | countEcmo | patients connected to ECMO | hardPatient | countEcmo |
-| CountBreathCum | cumulative mechanically ventilated patients | N.A. | N.A. |
-| new_hospitalized | new hospital admissions | N.A. | manually typed [here](https://github.com/yuval-harpaz/covid-19-israel-matlab/blob/master/data/Israel/dashboard_timeseries.csv) |
+| countBreathCum | cumulative mechanically ventilated patients | N.A. | N.A. |
+| newHospitalized | new hospital admissions | N.A. | manually typed [here](https://github.com/yuval-harpaz/covid-19-israel-matlab/blob/master/data/Israel/dashboard_timeseries.csv) |
 
 
