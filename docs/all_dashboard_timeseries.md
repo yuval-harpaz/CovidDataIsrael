@@ -1,5 +1,6 @@
 # Table "[all_dashboard_timeseries.csv](https://github.com/erasta/CovidDataIsrael/blob/master/out/csv/all_dashboard_timeseries.csv)"
-<a id="raw-url" href="https://raw.githubusercontent.com/erasta/CovidDataIsrael/master/out/csv/all_dashboard_timeseries.csv">Download FILE</a>
+To download, right-click and save-as on the link <a id="raw-url" href="https://raw.githubusercontent.com/erasta/CovidDataIsrael/master/out/csv/all_dashboard_timeseries.csv">Download</a><br>
+You may have to change filename from .txt to .csv
 ## Variable names, their meaning, and sources. 
 The table is based on Israel Ministry of Health's [dashboard](https://datadashboard.health.gov.il/COVID-19/general?utm_source=go.gov.il&utm_medium=referral). The data is available as different json files as specified below.  
 
