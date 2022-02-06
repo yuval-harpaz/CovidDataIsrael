@@ -1,27 +1,34 @@
 # Table "[all_dashboard_timeseries.csv](https://github.com/erasta/CovidDataIsrael/blob/master/out/csv/all_dashboard_timeseries.csv)"
+To download, right-click and save-as on the link <a id="raw-url" href="https://raw.githubusercontent.com/erasta/CovidDataIsrael/master/out/csv/all_dashboard_timeseries.csv">Download</a><br>
+You may have to change filename from .txt to .csv<br>
+try [here](all_dashboard_timeseries.xlsx)
 ## Variable names, their meaning, and sources. 
-The table is based on Israel Ministry of Health's [dashboard](https://datadashboard.health.gov.il/COVID-19/general?utm_source=go.gov.il&utm_medium=referral). The data is available as different json files with an address starting with _https://datadashboardapi.health.gov.il/api/queries/_, followed by the names specified below.  
+The table is based on Israel Ministry of Health's [dashboard](https://datadashboard.health.gov.il/COVID-19/general?utm_source=go.gov.il&utm_medium=referral). The data is available as different json files as specified below.  
 
-| Variable | description | json | field |
+| field | MOH field | json | description |
 | ------ | ------ | - | - |
-| date | yyyy-mm-dd | infectedPerDate | amount |
-| cases | positive PCR and Antigen tests by reported date | infectedPerDate | amount |
-| recovered | recovered cases | infectedPerDate | recovered |
-| tests | PCR and Antigen tests for COVID diagnosis (not recovery) |infectedPerDate | amountPersonTested |
-| positiveRate | percent positive tests = 100×cases/tests | infectedPerDate | positiveRate|
-| positiveRatePCR | percent positive PCR tests | infectedPerDate | positiveRatePCR|
-| positiveRateAntigen | percent positive Antigen tests | infectedPerDate | positiveRateAntigen|
-| deaths | deaths by date of death | deadPatientsPerDate | amount |
-| countHardStatus | hospitalized severely ill patients (low oxygenation, PaO2/FiO2 < 300) | hospitalizationStatusDaily | countHardStatus |
-| countMediumStatus | hospitalized in medium condition (COVID19 + pneumonia) | hospitalizationStatusDaily | countMediumStatus |
-| countEasyStatus | hospirtalized in mild condition (some COVID19 symptoms) | hospitalizationStatusDaily | countEasyStatus |
-| severe_new | new hospitalized patients in severe condition | patientsPerDate | severe_new |
-| medium_new | new hospitalized patients in medium condition (may have improved from severe)| patientsPerDate | medium_new |
-| easy_new | new hospitalized patients in mild condition (may have improved from mild or severe)| patientsPerDate | easy_new |
-| countBreath | mechanically ventilated patients | hardPatient | countBreath |
-| countCriticalStatus | hospitalized in critical condition (system failure- heart, lungs, kidneys...). usually in ICU | hardPatient | countCriticalStatus |
-| countEcmo | patients connected to ECMO | hardPatient | countEcmo |
-| CountBreathCum | cumulative mechanically ventilated patients | N.A. | N.A. |
-| new_hospitalized | new hospital admissions | N.A. | manually typed [here](https://github.com/yuval-harpaz/covid-19-israel-matlab/blob/master/data/Israel/dashboard_timeseries.csv) |
+| date | yyyy-mm-dd |  |  |
+| cases | amount | [infectedPerDate](https://datadashboardapi.health.gov.il/api/queries/infectedPerDate) | positive PCR and Antigen tests by reported date | 
+| recovered | recovered | [infectedPerDate](https://datadashboardapi.health.gov.il/api/queries/infectedPerDate) | recovered cases | 
+| tests | amountPersonTested | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | PCR and Antigen tests for COVID diagnosis (not recovery) |
+| positiveRate | positiveRate | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive tests = 100×cases/tests | 
+| positiveRatePCR | positiveRatePCR | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive PCR tests | 
+| positiveRateAntigen | positiveRateAntigen | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive Antigen tests | 
+| deaths |  countDeaths | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | deaths by date of death |
+| severeNew | seriousCriticalNew | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospitalized patients in severe condition |
+| mediumNew | mediumNew | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospitalized patients in medium condition (may have improved from severe)|
+| easyNew | easyNew | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospitalized patients in mild condition (may have improved from mild or severe)|
+| countEasyStatus | countEasyStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospirtalized in mild condition (some COVID19 symptoms) |
+| countMediumStatus | countMediumStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized in medium condition (COVID19 + pneumonia) |
+| countHardStatus | countHardStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized severely ill patients (low oxygenation, PaO2/FiO2 < 300) |
+| countBreath | countBreath | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | mechanically ventilated patients |
+| countCriticalStatus | countCriticalStatus | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | hospitalized in critical condition (system failure- heart, lungs, kidneys...). Usually in ICU |
+| countSeriousCriticalCum | countSeriousCriticalCum | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | cumulative severe or critical patients. The difference between days gives the number of new severe patients |
+| newHospitalized | newHospitalized | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospital admissions |
+| countBreathCum | countBreathCum | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | cumulative mechanically ventilated patients. The difference between days gives the number of newly ventilated. This is the closest measure to new ICU admissions. |
+| countHospitalized | countHospitalized | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | all hospitalized COVID19 patients |
+| countEcmo | countEcmo | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | patients connected to ECMO |
+
+
 
 
