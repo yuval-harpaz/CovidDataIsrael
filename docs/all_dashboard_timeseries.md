@@ -1,6 +1,6 @@
 # Table "[all_dashboard_timeseries.csv](https://github.com/erasta/CovidDataIsrael/blob/master/out/csv/all_dashboard_timeseries.csv)"
 Download [xlsx](https://github.com/yuval-harpaz/CovidDataIsrael/raw/readme/docs/all_dashboard_timeseries.xlsx) or <br>
-Right-click and save-as [txt](https://github.com/yuval-harpaz/CovidDataIsrael/raw/readme/docs/all_dashboard_timeseries.csv)<br>
+Right-click and save-as [txt](https://raw.githubusercontent.com/yuval-harpaz/CovidDataIsrael/readme/out/csv/all_dashboard_timeseries.csv)<br>
 You may have to change filename from .txt to .csv<br>
 
 ## Variable names, their meaning, and sources. 
