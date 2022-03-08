@@ -10,10 +10,10 @@ The table is based on Israel Ministry of Health's [dashboard](https://datadashbo
 | date | yyyy-mm-dd |  |  |
 | cases | amount | [infectedPerDate](https://datadashboardapi.health.gov.il/api/queries/infectedPerDate) | positive PCR and Antigen tests by reported date | 
 | recovered | recovered | [infectedPerDate](https://datadashboardapi.health.gov.il/api/queries/infectedPerDate) | recovered cases | 
-| tests | amountPersonTested | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | PCR and Antigen tests for COVID diagnosis (not recovery) |
-| positiveRate | positiveRate | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive tests = 100×cases/tests | 
-| positiveRatePCR | positiveRatePCR | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive PCR tests | 
-| positiveRateAntigen | positiveRateAntigen | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | percent positive Antigen tests | 
+| tests | amountPersonTested | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/testResultsPerDate) | PCR and Antigen tests for COVID diagnosis (not recovery) |
+| positiveRate | positiveRate | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/testResultsPerDate) | percent positive tests = 100×cases/tests | 
+| positiveRatePCR | positiveRatePCR | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/testResultsPerDate) | percent positive PCR tests | 
+| positiveRateAntigen | positiveRateAntigen | [testResultsPerDate](https://datadashboardapi.health.gov.il/api/queries/testResultsPerDate) | percent positive Antigen tests | 
 | deaths |  countDeaths | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | deaths by date of death |
 | severeNew | seriousCriticalNew | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospitalized patients in severe condition |
 | mediumNew | mediumNew | [hospitalizationStatus](https://datadashboardapi.health.gov.il/api/queries/hospitalizationStatus) | new hospitalized patients in medium condition (may have improved from severe)|
